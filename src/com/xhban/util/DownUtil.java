@@ -23,8 +23,7 @@ public class DownUtil {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		String name = sdf.format(date);
 		File file1 = new File("D:\\wallpapers\\logs\\" + name + ".txt");
-		File file2 = new File("D:\\wallpapers\\errors\\" + name + ".txt");
-		if (file1.exists() || file2.exists()) {
+		if (file1.exists()) {
 			return true;
 		}
 		return false;
